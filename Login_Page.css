@@ -1,0 +1,162 @@
+.mediaViewInfo {
+	--web-view-name: iPhone 13, 12 Pro Max – 1;
+	--web-view-id: iPhone_13_12_Pro_Max__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: iPhone_13_12_Pro_Max__1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#iPhone_13_12_Pro_Max__1 {
+	position: absolute;
+	width: 428px;
+	height: 926px;
+	overflow: hidden;
+	--web-view-name: iPhone 13, 12 Pro Max – 1;
+	--web-view-id: iPhone_13_12_Pro_Max__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Rectangle_1 {
+	fill: rgba(255,255,255,0.302);
+	stroke: rgba(202,58,58,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 300px;
+	height: 50px;
+	left: 62px;
+	top: 259px;
+}
+#person_black_24dp_1 {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 79px;
+	top: 264px;
+	overflow: visible;
+}
+#Path_1 {
+	fill: transparent;
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Path_2 {
+	fill: rgba(0,0,0,1);
+}
+.Path_2 {
+	overflow: visible;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 4px;
+	top: 4px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#UserID {
+	left: 139px;
+	top: 264px;
+	position: absolute;
+	overflow: visible;
+	width: 190px;
+	height: 41px;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(182,58,58,1);
+}
+#Rectangle_2 {
+	fill: rgba(255,255,255,0.302);
+	stroke: rgba(202,58,58,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_2 {
+	position: absolute;
+	overflow: visible;
+	width: 300px;
+	height: 50px;
+	left: 64px;
+	top: 344px;
+}
+#key_FILL0_wght400_GRAD0_opsz48 {
+	fill: rgba(0,0,0,1);
+}
+.key_FILL0_wght400_GRAD0_opsz48 {
+	overflow: visible;
+	position: absolute;
+	width: 46px;
+	height: 24px;
+	left: 81px;
+	top: 357px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Password {
+	left: 139px;
+	top: 349px;
+	position: absolute;
+	overflow: visible;
+	width: 190px;
+	height: 41px;
+	text-align: left;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(182,58,58,1);
+}
+#Rectangle_3 {
+	fill: rgba(169,112,198,0.612);
+	stroke: rgba(161,200,214,1);
+	stroke-width: 1px;
+	stroke-linejoin: miter;
+	stroke-linecap: butt;
+	stroke-miterlimit: 4;
+	shape-rendering: auto;
+}
+.Rectangle_3 {
+	position: absolute;
+	overflow: visible;
+	width: 150px;
+	height: 50px;
+	left: 139px;
+	top: 454px;
+}
+#Login {
+	left: 139px;
+	top: 454px;
+	position: absolute;
+	overflow: visible;
+	width: 151px;
+	height: 41px;
+	text-align: center;
+	font-family: Segoe UI;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(212,236,244,1);
+}

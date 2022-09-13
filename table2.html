@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            width: 100%;
+        }
+        table,th,td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Column Span</caption>
+        <tr>
+            <th> Name</th>
+            <th colspan="2"> Mobile No</th>
+        </tr>
+        <tr>
+            <td>Shubham</td>
+            <td>88888 88888</td>
+            <td>99999 99999</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+
+    <table >
+        <Caption>Row Span</Caption>
+        <tr>
+            <th> Name</th>
+            <th> Shubham</th>
+        </tr>
+        <tr>
+            <th rowspan="2">Mobile No</th>
+            <td>88888 88888</td>
+            
+        </tr>
+        <tr>
+            <td>99999 99999</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  background-color: lightblue;
+}
+</style>
+<h2 style="Red">JAVASCRIPT  DATATYPES</h2>
+<h3>1.String</h3>
+<p id="demo"></p>
+<script>
+let y =  63 + "KeyWords";
+document.getElementById("demo").innerHTML = y ;
+</script>
+
+<p id="demo1"></p>
+<script>
+let l =  "Shru" + "Rish";
+document.getElementById("demo1").innerHTML = l ;
+</script>
+
+<h3>2.Numbers</h3>
+<p id="demo3"></p>
+<script>
+let x1 = 52.00;
+let x2 = 89;
+let x3 = 4.14;
+document.getElementById("demo3").innerHTML =
+x1 + "<br>" + x2 + "<br>" + x3;
+</script>
+
+<h2>3.Dynamic</h2>
+<p id="demo4"></p>
+<script>
+let x;         // Now x is undefined
+x = 5;         // Now x is a Number
+x = "shruti";    // Now x is a String
+document.getElementById("demo4").innerHTML = x;
+</script>
+
+<h2>4. Objects</h2>
+<p id="demo5"></p>
+<script>
+const person = {
+  firstName : "shruti",
+  lastName  : "sawant",
+  age     : 22,
+  eyeColor  : "black"
+};
+document.getElementById("demo5").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+<h2>5. Arrays</h2>
+<p>Array indexes are zero-based.</p>
+<p id="demo6"></p>
+<script>
+const girls = ["shreya","riya","priya"];
+document.getElementById("demo6").innerHTML = girls;
+</script>
+
+<h2>6.Booleans</h2>
+<p id="demo8"></p>
+<script>
+let r = 5;
+let s = 5;
+let t = 6;
+document.getElementById("demo8").innerHTML =
+(r == s) + "<br>" + (r == t);
+</script>
+
+
+<h2>7.Undefined</h2>
+<p id="demo12"></p>
+<script>
+let Mango;
+document.getElementById("demo12").innerHTML =
+Mango + "<br>" + typeof Fruit;
+</script>
+
+<h2>8.Null</h2>
+<p id="demos"></p>
+<script>
+let car = "";
+document.getElementById("demos").innerHTML =
+"The value is: " +
+car + "<br>" +
+"The type is: " + typeof car;
+</script>
+
+
+
+
+</body>
+</html>

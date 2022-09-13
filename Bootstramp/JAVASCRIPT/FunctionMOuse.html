@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        border-radius: 200px;
+    }
+</style>
+<body>
+
+    <script type="text/javascript">
+        function mouseup()
+        {
+            document.getElementById("a").style.color = "red";
+        }
+        function md()
+        {
+            document.getElementById("a").style.color = "green"; 
+        }
+
+        function myfm(e){
+            var x= e.clientX;
+            var y= e.clientY;
+            var coor = "Cooedinates: ("+ x + "," + y + ")";
+            document.getElementById("demo").innerHTML = coor; 
+
+        }
+        function myfo(){
+            document.getElementById("demo").innerHTML = ""; 
+        }
+
+        function keydown(){
+            document.getElementById(i);
+            alert("Pressed a key")
+        }
+        function keypress(){
+            document.getElementById(ii);
+            alert("Press ")
+        }
+        function keyup(){
+            document.getElementById(iii);
+            alert("Key up event ")
+        }
+
+    </script>
+    <p id="a" onmouseup="mouseup()" onmousedown="md()" > Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aliquam optio molestias iusto fugiat perferendis. Deleniti distinctio sapiente officiis quos velit ab ex. Eum, earum!
+<div onmousemove="myfm(event)" onmouseout="myfo()"></div>
+    
+    <p id="demo"></p>
+<br><br>
+
+<h2>Enter Something Here : Key Down </h2>
+<input type="text" id="i" onkeydown="keydown()">
+<br><br>
+
+<h2>Enter Something Here : Key Up </h2>
+<input type="text" id="iii" onkeyup ="keyup()">
+</body>
+</html>

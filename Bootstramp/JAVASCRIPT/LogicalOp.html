@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Operator</title>
+</head>
+<html>
+
+<head>
+  
+    <style>
+        body {
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        .blinking{
+            animation: blink 2s infinite;
+            background-color: lightcyan;
+            color: brown;
+        }
+
+        @keyframes blink {
+            0%{ color: black;}
+            25%{ color: transparent;}
+            50%{ color: transparent;}
+            75%{ color: green;}
+            100%{ color: green;}
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var a = 50;
+        var b = 60;
+    </script>
+    The value of a is <span class="blinking"><script>  document.write(a)</script></span> <br>
+    The value of b is <span class="blinking"><script>  document.write(b)</script></span> <br>
+    <span class="blinking">
+    <script type="text/javascript">
+        var a = 50 ;
+        var b = 60 ;
+        var linebreak = "<br/>" ;
+
+       /* document.write("a=")
+        result = a ;
+        document.write(result);
+        document.write(" :  ")
+
+        document.write("b=")
+        result = b ;
+        document.write(result);
+        document.write(linebreak); */
+
+        document.write("(a && b) => ")
+        result = (a<b) && (a>b) ;
+        document.write(result);
+        document.write(linebreak);
+
+        document.write("(a || b) => ")
+        result = (a<b) || (a>b) ;
+        document.write(result);
+        document.write(linebreak);
+
+        document.write("!(a && b) => ")
+        result = (!((a<b) && (a>b)));
+        document.write(result);
+        document.write(linebreak);
+
+       
+
+
+    </script>
+</span>
+
+
+</body>
+</html>

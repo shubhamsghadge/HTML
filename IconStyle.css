@@ -1,0 +1,79 @@
+.container {
+    width: 15em;
+    height: 10em;
+    position: relative;
+    border: red;
+    animation: notify 760ms ease-in-out 1 forwards;
+}
+@keyframes notify {
+    0%,
+    100% {
+        transform: scale(1);     
+    }
+    50% {
+        transform:scale(0.7);
+    }
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 5em solid transparent ;
+    border-bottom:  4.5em solid transparent;
+    border-left: 4.5em solid #000;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 5em solid transparent ;
+    border-bottom:  4.5em solid transparent;
+    border-right: 4.5em solid #000;
+}
+
+.trapezium {
+    position: absolute;
+    bottom: 0;
+    width: 33%;
+    height: 0;
+    border-left: 5em solid transparent;
+    border-right:  5em solid transparent;
+    border-bottom:  5em solid #000;
+}
+
+.triangle {
+    position: absolute ;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    transform-origin: top;
+    border-top: 8em solid #fff;
+    border-left: 8em solid transparent;
+    border-right: 8em solid transparent; 
+    z-index: 3;
+    animation: open 1s ease-in 1 375ms forwards;
+}
+
+.triangle::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+    border-top: 7em solid #000;
+    border-left: 7.5em solid transparent ;
+    border-right:  7.5em solid transparent;
+
+}

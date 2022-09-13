@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+    <style>
+        .bigcontainer{
+            height: 600px;
+            width: 1240px;
+            border: 2px solid blue;
+        }
+        section.first{
+            height: 33%;
+            width: auto;
+            border: 1px solid red;
+        }
+
+        section.second{
+            height: 33%;
+            width: auto;
+            border: 1px solid red;
+        }
+
+        section.third{
+            height: 33%;
+            width: auto;
+            border: 1px solid red;
+        }
+        article.input1{
+            height: 100%;
+            width: 33%;
+            border: 1px solid green;
+            
+        }
+
+        label{
+            padding-top: 50px;
+        }
+
+        form{
+          
+            padding-top: 10px;
+            padding-left: 120px;
+ 
+        }
+
+        aside.input2{
+            height: 100%;
+            width: 33%;
+            border: 1px solid green;
+            margin-left: 33%;
+            
+            
+        }
+
+    </style>
+    <script>
+         function getValue(){
+            var color = document.getElementById("mycolor").value;
+            alert (color);
+        }
+
+        function getValue(){
+            var date = document.getElementById("mydate").value;
+            alert (date);
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="bigcontainer">
+        <section class="first">
+
+            <aside class="input2">
+                <form action="">
+                    <label for="mydate">Select Date :</label> <br> <br>
+                    <input type="date" name="" value="2022-04-25" id="mydate">
+                    <button type="button" onclick="getValue();"> Get Value </button>
+                </form>
+
+            </aside>
+
+            <article class="input1">
+                <form action="">
+                    <header><h2>Color Input</h2></header>
+                <label for="mycolor">Select your favorite Color :</label> <br> <br>
+                <input type="color" name="Color" value="#707027" id="mycolor"> <br> <br>
+                <button type="button" onclick="getValue();"> Get Value </button>
+                </form>
+            </article>
+
+         
+
+        </section>
+        <section class="second">
+
+        </section>
+        <section class="third">
+
+        </section>
+
+    </div>
+</body>
+</html>

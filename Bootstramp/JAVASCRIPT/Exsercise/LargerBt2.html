@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison</title>
+</head>
+<body>
+    <script>
+      
+        var num1 = parseInt(prompt("Enter First Number : "));
+        var num2 =  parseInt(prompt("Enter First Number : "));
+        if (num1 > num2){
+            alert(num1 + " "+ " > "+" " + num2 )
+            document.write( "First Number is Larger : "+ num1)
+            
+        }
+        else{
+            alert(num1 + " "+ " < "+" " + num2 )
+            document.write( "Second Number is Larger : " + num2)
+        }
+
+        
+     </script>
+     <br><br>
+     <script>
+        var arr1 = parseInt(prompt("Enter first Number : "))
+        var arr2 = parseInt(prompt("Enter second Number : "))
+        var arr3 = parseInt(prompt("Enter third Number : "))
+        var arr4 = parseInt(prompt("Enter fourth Number : "))
+        var arr5 = parseInt(prompt("Enter fifth Number : "));
+
+        var array = [arr1,arr2,arr3,arr4,arr5];
+
+        var largest= 0;
+
+            for (i=0; i<array.length; i++){
+                if (array[i]>largest) {
+                    largest=array[i];
+                }
+            }
+            document.write("Largest Number in given 5 Number is : ")
+            document.write(largest)
+     </script>
+     <br><br>
+     <script>
+        var str = "*";
+        var n = 5;
+        for (i=0; i < n ; i++)
+        { 
+            for(j=0 ; j < i ; j++)
+            {
+                document.write(str  )
+            }
+           document.write("<br/>")
+        }
+     </script>
+    
+</body>
+</html>

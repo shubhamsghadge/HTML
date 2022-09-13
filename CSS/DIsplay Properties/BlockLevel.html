@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/App/main.css">
+    <style>
+        *{
+            background-color: lightblue;
+        }
+        p{
+            display: block;
+            color: rgb(121, 62, 62);
+        }
+        p.inline{
+            display: inline-block;
+            background-color: rgb(121, 62, 62) ;
+            color: white;
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-left: 10px;
+            visibility: visible;
+        }
+
+        h1{
+           
+            color:rgba(24, 24, 224, 0.459);
+        }
+        h2.a{
+            visibility: visible;
+            color:rgba(14, 14, 164, 0.581) ;
+        }
+
+        h2.b{
+            visibility: hidden;
+        }
+        p.visible{
+            color:rgb(8, 8, 183) ;
+        }
+        .container{
+            border: 2px solid black;
+            height: auto;
+            width: auto;
+        }
+        .position1{
+            color: Red;
+            position: fixed;
+            top: 50px;
+            right: 500px;
+
+        }
+        .position2{
+            color: Red;
+            position: fixed;
+            top: 90px;
+            right: 400px;
+
+        }
+
+        h2.pos_left{
+            position: relative;
+            left: -30px;
+            color: rgb(121, 62, 62);
+        }
+
+        h2.pos_right{
+            position: relative;
+            left: 50px;
+            color: rgb(121, 62, 62);
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    This Is Header
+</header> <br><br>
+
+<p>Hello</p>
+<p>Welcome</p>
+<p>CSS</p>
+<p>Class</p>
+
+<p class="inline">This</p>
+<p class="inline">is</p>
+<p class="inline" id="1">Example</p>
+<p class="inline">of</p>
+<p class="inline">Inline</p>
+<p class="inline">Block</p> <br><br>
+<div class="container">
+<h1>The visibility Property</h1>
+<h2 class="a">This Heading is Visible</h2>
+<h2 class="b">This Is Invisible</h2>
+<p class="visible">Notice that Hidden heading takes up the space </p>
+<h1 class="position1">This is fixed Position Text</h1>
+<h1 class="position2">You Can fixed this at Anywhere on Page</h1>
+
+</div> 
+<br>
+
+<div class="relative">
+    <h2 style="color: green;">This Heading with No Position</h2>
+    <h2 class="pos_left">This heading is positioned left to it's normanl Position</h2>
+    <h2 class="pos_right">This heading is positioned right to it's normanl Position</h2>
+    <p style="color: red;"> The style "left:-30px" Substracts 30 pixels from element's original Left Position </p>
+    <p style="color: red;"> The style "right:50px" adds 30 pixels from element's original right Position </p> 
+
+
+
+</div> <br><br>
+<footer>
+    This is footer
+</footer>
+
+  
+</body>
+</html>

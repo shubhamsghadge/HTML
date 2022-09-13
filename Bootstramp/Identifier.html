@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<html>
+
+<head>
+    <title>Identifier Demo</title>
+    <style>
+        body {
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+           <div class="well well-sm">
+            
+            <h2 style="text-align:center; color: red;">JavaScript Data Types</h2>
+           </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="panel panel-primary">
+          <div class="panel-heading">
+              <h3>Body Temperature</h3>
+          </div>
+
+         <div class="panel-body">
+                <script>
+                    var tempFahrenheit = 99;
+                    let TempFahrenheit = 99;
+                    // let TempFahrenheit=99; Redeclaration is not allowed 
+
+                    const TEMP_CELSIUS = 38;
+
+                    // document.write() is used to write content onto the HTML page
+                    document.write("Default temperature (var) is: " + tempFahrenheit + "</span>");
+                    document.write("<br/>");
+                    document.write("Default temperature (let) is: " + TempFahrenheit + "</span>");
+                    document.write("<br/>");
+                    document.write("Normal body temperature in Celsius is: " + TEMP_CELSIUS + "</span>");
+               </script>
+        </div>
+            <div class="panel-footer">
+                <p>Click Here to View</p>
+            </div>
+    </div>
+  <div class="row">
+    <div class="col-md-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3>1. String</h3>
+            </div>
+  
+           <div class="panel-body">
+            <p id = "demo"> </p>
+                <script>
+                let y = 63 + "Keywords";
+                document.getElementById("demo").innerHTML=y;
+                </script>
+          </div>
+              <div class="panel-footer">
+                <p id = "demo1"> </p>
+                <script>
+                  let a = "Shu" + "bham";
+                  document.getElementById("demo1").innerHTML=a;
+                </script>
+              </div>
+      </div>
+
+      <div class="col-md-9">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3>2. Numbers</h3>
+            </div>
+  
+           <div class="panel-body">
+           
+                <p id = "demo2"> </p>
+                <script>
+                let a1 = 52.00;
+                let a2 = 45;
+                let a3 = 5.23;
+                document.getElementById("demo2").innerHTML= a1 + "<br>" + a2 + "<br>" + a3;
+                </script>
+          </div>
+        </div>>      
+      </div>
+    </div>    
+    
+
+
+
+   
+</div>
+</body>
+
+</html>

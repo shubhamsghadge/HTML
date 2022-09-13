@@ -1,0 +1,291 @@
+What is Bootstrap?
+---------------------------------------------------------------------------------------------------------------
+Bootstrap is a free front-end framework for faster and easier web development
+Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins
+Bootstrap also gives you the ability to easily create responsive designs
+
+What is Responsive Web Design?
+-------------------------------------
+Responsive web design is about creating web sites which automatically adjust themselves to look good on all devices, from small phones to large desktops.
+
+Bootstrap History
+---------------------
+Bootstrap was developed by Mark Otto and Jacob Thornton at Twitter, and released as an open source product in August 2011 on GitHub.
+In June 2014 Bootstrap was the No.1 project on GitHub!
+
+Why Use Bootstrap?
+------------------------
+Advantages of Bootstrap:
+
+Easy to use: Anybody with just basic knowledge of HTML and CSS can start using Bootstrap
+Responsive features: Bootstrap's responsive CSS adjusts to phones, tablets, and desktops
+Mobile-first approach: In Bootstrap 3, mobile-first styles are part of the core framework
+Browser compatibility: Bootstrap is compatible with all modern browsers (Chrome, Firefox, Internet Explorer, Edge, Safari, and Opera)
+
+Bootstrap Versions
+------------------------
+Bootstrap 3, which was released in 2013. However, we also cover newer versions; Bootstrap 4 (released 2018) and Bootstrap 5 (released 2021).
+
+Bootstrap 5 is the newest version of Bootstrap; with new components, faster stylesheets, more responsiveness etc. It supports the latest, stable releases of all major browsers and platforms. However, Internet Explorer 11 and down is not supported.
+
+The main differences between Bootstrap 5 and Bootstrap 3 & 4, is that Bootstrap 5 has switched to JavaScript instead of jQuery.
+
+Note: Bootstrap 3 and Bootstrap 4 is still supported by the team for critical bugfixes and documentation changes, and it is perfectly safe to continue to use them. However, new features will NOT be added to them.
+
+Where to Get Bootstrap?
+There are two ways to start using Bootstrap on your own web site.
+
+You can:
+
+Download Bootstrap from getbootstrap.com
+Include Bootstrap from a CDN
+Downloading Bootstrap
+If you want to download and host Bootstrap yourself, go to getbootstrap.com, and follow the instructions there.
+
+Bootstrap CDN
+-----------------
+If you don't want to download and host Bootstrap yourself, you can include it from a CDN (Content Delivery Network).
+MaxCDN provides CDN support for Bootstrap's CSS and JavaScript. You must also include jQuery:
+
+MaxCDN:
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+One advantage of using the Bootstrap CDN:
+Many users already have downloaded Bootstrap from MaxCDN when visiting another site. As a result, it will be loaded from cache when they visit your site, which leads to faster loading time. Also, most CDN's will make sure that once a user requests a file from it, it will be served from the server closest to them, which also leads to faster loading time.
+
+jQuery
+Bootstrap uses jQuery for JavaScript plugins (like modals, tooltips, etc). However, if you just use the CSS part of Bootstrap, you don't need jQuery.
+
+Create First Web Page With Bootstrap
+---------------------------------------
+1. Add the HTML5 doctype
+Bootstrap uses HTML elements and CSS properties that require the HTML5 doctype.
+Always include the HTML5 doctype at the beginning of the page, along with the lang attribute and the correct character set:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+  </head>
+</html>
+
+2. Bootstrap 3 is mobile-first
+Bootstrap 3 is designed to be responsive to mobile devices. Mobile-first styles are part of the core framework.
+To ensure proper rendering and touch zooming, add the following <meta> tag inside the <head> element:
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser.
+
+3. Containers
+
+Bootstrap also requires a containing element to wrap site contents.
+There are two container classes to choose from:
+
+The .container class provides a responsive fixed width container
+The .container-fluid class provides a full width container, spanning the entire width of the viewportr
+---------------------------------------------------------------------------------------------------------------
+Bootstrap Text/Typography
+---------------------------------------------------------------------------------------------------------------
+Bootstrap's Default Settings
+-----------------------------
+Bootstrap's global default font-size is 14px, with a line-height of 1.428.
+This is applied to the <body> element and all paragraphs (<p>).
+In addition, all <p> elements have a bottom margin that equals half their computed line-height (10px by default).
+
+Bootstrap vs. Browser Defaults
+-----------------------------------
+we will look at some HTML elements that will be styled a little bit differently by Bootstrap than browser defaults.
+
+<h1> - <h6>
+By default, Bootstrap will style the HTML headings (<h1> to <h6>) in the following way:
+
+Example
+h1 Bootstrap heading (36px)
+h2 Bootstrap heading (30px)
+h3 Bootstrap heading (24px)
+h4 Bootstrap heading (18px)
+h5 Bootstrap heading (14px)
+h6 Bootstrap heading (12px)
+
+<small>
+In Bootstrap the HTML <small> element is used to create a lighter, secondary text in any heading:
+<div class="container">
+  <h1>Lighter, Secondary Text</h1>
+  <p>The small element is used to create a lighter, secondary text in any heading:</p>       
+  <h1>h1 heading <small>secondary text</small></h1>
+  <h2>h2 heading <small>secondary text</small></h2>
+  <h3>h3 heading <small>secondary text</small></h3>
+  <h4>h4 heading <small>secondary text</small></h4>
+  <h5>h5 heading <small>secondary text</small></h5>
+  <h6>h6 heading <small>secondary text</small></h6>
+</div>
+
+<mark>
+Bootstrap will style the HTML <mark> element in the following way:
+<div class="container">
+  <h1>Highlight Text</h1>    
+  <p>Use the mark element to <mark>highlight</mark> text.</p>
+</div>
+
+<abbr>
+Bootstrap will style the HTML <abbr> element in the following way:
+<div class="container">
+  <h1>Abbreviations</h1>
+  <p>The abbr element is used to mark up an abbreviation or acronym:</p>
+  <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+</div>
+
+<blockquote>
+Bootstrap will style the HTML <blockquote> element in the following way:
+<div class="container">
+  <h1>Blockquotes</h1>
+  <p>The blockquote element is used to present content from another source:</p>
+  <blockquote>
+    <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+    <footer>From WWF's website</footer>
+  </blockquote>
+</div>
+
+To show the quote on the right, use the .blockquote-reverse class
+<blockquote class = "blockquote-reverse">
+
+<dl>
+Bootstrap will style the HTML <dl> element in the following way:
+<div class="container">
+  <h1>Description Lists</h1>    
+  <p>The dl element indicates a description list:</p>
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>     
+</div>
+
+<code>
+Bootstrap will style the HTML <code> element in the following way:
+
+<div class="container">
+  <h1>Code Snippets</h1>
+  <p>Inline snippets of code should be embedded in the code element:</p>
+  <p>The following HTML elements: <code>span</code>, <code>section</code>, and <code>div</code> defines a section in a document.</p>
+</div>
+
+<kbd>
+Bootstrap will style the HTML <kbd> element in the following way:
+<div class="container">
+  <h1>Keyboard Inputs</h1>
+  <p>To indicate input that is typically entered via the keyboard, use the kbd element:</p>
+  <p>Use <kbd>ctrl + p</kbd> to open the Print dialog box.</p>
+</div>
+
+<pre>
+Bootstrap will style the HTML <pre> element in the following way:
+<div class="container">
+<h1>Multiple Code Lines</h1>
+<p>For multiple lines of code, use the pre element:</p>
+<pre>
+Text in a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks.
+</pre>
+</div>
+
+Contextual Colors and Backgrounds
+Bootstrap also has some contextual classes that can be used to provide "meaning through colors".
+The classes for text colors are:.text-muted, .text-primary, .text-success, .text-info, .text-warning, and .text-danger:
+<div class="container">
+  <h2>Contextual Colors</h2>
+  <p>Use the contextual classes to provide "meaning through colors":</p>
+  <p class="text-muted">This text is muted.</p>
+  <p class="text-primary">This text is important.</p>
+  <p class="text-success">This text indicates success.</p>
+  <p class="text-info">This text represents some information.</p>
+  <p class="text-warning">This text represents a warning.</p>
+  <p class="text-danger">This text represents danger.</p>
+</div>
+
+The classes for background colors are:.bg-primary, .bg-success, .bg-info, .bg-warning, and .bg-danger:
+<div class="container">
+  <h2>Contextual Backgrounds</h2>
+  <p>Use the contextual background classes to provide "meaning through colors":</p>
+  <p class="bg-primary">This text is important.</p>
+  <p class="bg-success">This text indicates success.</p>
+  <p class="bg-info">This text represents some information.</p>
+  <p class="bg-warning">This text represents a warning.</p>
+  <p class="bg-danger">This text represents danger.</p>
+</div>
+
+More Typography Classes
+The Bootstrap classes below can be added to style HTML elements further:
+
+Class			Description	
+--------------------------------------------
+.lead			Makes a paragraph stand out	
+.small			Indicates smaller text (set to 85% of the size of the parent)	
+.text-left		Indicates left-aligned text	
+.text-center		Indicates center-aligned text	
+.text-right		Indicates right-aligned text	
+.text-justify		Indicates justified text	
+.text-nowrap		Indicates no wrap text	
+.text-lowercase		Indicates lowercased text	
+.text-uppercase		Indicates uppercased text	
+.text-capitalize	Indicates capitalized text	
+.initialism		Displays the text inside an <abbr> element in a slightly smaller font size	
+.list-unstyled		Removes the default list-style and left margin on list items (works on both <ul> and 				<ol>). This class only applies to immediate children list items (to remove the default 				list-style from any nested lists, apply this class to any nested lists as well)	
+.list-inline		Places all list items on a single line	
+.dl-horizontal		Lines up the terms (<dt>) and descriptions (<dd>) in <dl> elements side-by-side. Starts 			off like default <dl>s, but when the browser window expands, it will line up side-by-				side	
+.pre-scrollable		Makes a <pre> element scrollable
+---------------------------------------------------------------------------------------------------------------
+Bootstrap Tables
+---------------------------------------------------------------------------------------------------------------
+Bootstrap Basic Table
+A basic Bootstrap table has a light padding and only horizontal dividers.
+
+The .table class adds basic styling to a table:
+
+Striped Rows
+The .table-striped class adds zebra-stripes to a table:
+
+Bordered Table
+The .table-bordered class adds borders on all sides of the table and cells:
+
+Hover Rows
+The .table-hover class adds a hover effect (grey background color) on table rows:
+
+Condensed Table
+The .table-condensed class makes a table more compact by cutting cell padding in half:
+
+Contextual Classes
+Contextual classes can be used to color table rows (<tr>) or table cells (<td>):
+The contextual classes that can be used are:
+
+Class		Description
+-----------------------------------------------------------------------
+.active		Applies the hover color to the table row or table cell
+.success	Indicates a successful or positive action
+.info		Indicates a neutral informative change or action
+.warning	Indicates a warning that might need attention
+.danger		Indicates a dangerous or potentially negative action
+
+Responsive Tables
+The .table-responsive class creates a responsive table. The table will then scroll horizontally on small devices (under 768px). When viewing on anything larger than 768px wide, there is no difference:
+
+Example
+<div class="table-responsive">
+  <table class="table">
+    ...
+  </table>
+</div>
+

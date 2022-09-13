@@ -1,0 +1,252 @@
+.mediaViewInfo {
+	--web-view-name: Custom Size – 1;
+	--web-view-id: Custom_Size__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: Custom_Size__1;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#Custom_Size__1 {
+	position: absolute;
+	width: 1280px;
+	height: 671px;
+	background-color: rgba(255,255,255,1);
+	overflow: hidden;
+	--web-view-name: Custom Size – 1;
+	--web-view-id: Custom_Size__1;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+#Web_1280__3 {
+	position: absolute;
+	width: 1280px;
+	height: 800px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_62 {
+	position: absolute;
+	width: 58px;
+	height: 60px;
+	left: 1121px;
+	top: 7px;
+	overflow: visible;
+}
+#person_black_24dp_1 {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 9px;
+	top: 0px;
+	overflow: visible;
+}
+#Path_14 {
+	fill: transparent;
+}
+.Path_14 {
+	overflow: visible;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Path_15 {
+	fill: rgba(0,0,0,1);
+}
+.Path_15 {
+	overflow: visible;
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	left: 4px;
+	top: 4px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#MY_FACILITY_ {
+	left: 0px;
+	top: 36px;
+	position: absolute;
+	overflow: visible;
+	width: 59px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(0,0,0,1);
+}
+#Group_4 {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_3 {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_39 {
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Path_16 {
+	fill: rgba(5,130,202,1);
+}
+.Path_16 {
+	overflow: visible;
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#chevron_right_FILL0_wght400_GR {
+	fill: rgba(255,255,255,1);
+}
+.chevron_right_FILL0_wght400_GR {
+	overflow: visible;
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 56px;
+	top: 29px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_51 {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 26px;
+	top: 22px;
+	overflow: visible;
+}
+#Path_21 {
+	fill: transparent;
+}
+.Path_21 {
+	overflow: visible;
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Path_22 {
+	fill: rgba(255,255,255,1);
+}
+.Path_22 {
+	overflow: visible;
+	position: absolute;
+	width: 18px;
+	height: 22px;
+	left: 3px;
+	top: 1px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Assets {
+	left: 0px;
+	top: 45px;
+	position: absolute;
+	overflow: visible;
+	width: 76px;
+	height: 21px;
+	text-align: center;
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	color: rgba(255,255,255,1);
+}
+#Group_63 {
+	position: absolute;
+	width: 51.736px;
+	height: 60px;
+	left: 1204px;
+	top: 7px;
+	overflow: visible;
+}
+#logout_black_24dp {
+	position: absolute;
+	width: 49px;
+	height: 40px;
+	left: 2.736px;
+	top: 0px;
+	overflow: visible;
+}
+#Group_8 {
+	position: absolute;
+	width: 49px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#Path_1 {
+	fill: transparent;
+}
+.Path_1 {
+	overflow: visible;
+	position: absolute;
+	width: 49px;
+	height: 40px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#Group_9 {
+	position: absolute;
+	width: 43px;
+	height: 34px;
+	left: 3px;
+	top: 3px;
+	overflow: visible;
+}
+#Path_2 {
+	fill: rgba(0,0,0,1);
+}
+.Path_2 {
+	overflow: visible;
+	position: absolute;
+	width: 43px;
+	height: 34px;
+	left: 0px;
+	top: 0px;
+	transform: matrix(1,0,0,1,0,0);
+}
+#MY_FACILITY__ {
+	left: 0px;
+	top: 36px;
+	position: absolute;
+	overflow: visible;
+	width: 50px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Oswald;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(0,0,0,1);
+}

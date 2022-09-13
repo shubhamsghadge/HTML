@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            position: absolute;
+            z-index: -1;
+            top: 90px;
+            left: 200px;
+        }
+        h1{
+            color: green;
+        }
+        p{
+            color: red;
+        }
+        header{
+            height: 70px;
+            background-color: blueviolet;
+            color: white;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        h2{
+            color: white;
+            text-align: center;
+        }
+     div p{
+        background-color: yellowgreen;
+        color: blue;
+     }
+      
+     div > section > p{
+        background-color: lightblue;
+        color: rgb(11, 7, 53);
+     }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>7th July 2022</h2>
+    </header>
+  <br><br> <br>
+  
+    <h1>
+        1.The Z-Index Property
+    </h1>
+    <img src="/images/baby1.jpg" alt="" width="100" height="150">
+    <p>Because Image has Z Index of -1, It will placed behind the Heading</p>
+
+<br> <br> <br>
+
+<h1>2.Descendant Selector</h1>
+
+<div >
+    <p>Para 1 in div</p>
+    <p>Para 2 in div</p>
+    <p>Para 3 in div</p>
+    <section>
+        <p>Para of section tag (This is Example of Child Selector)</p>
+    </section>
+</div>
+<p>Para 4 Not in div</p>
+<p>Para 5 Not in div</p>
+</body>
+</html>

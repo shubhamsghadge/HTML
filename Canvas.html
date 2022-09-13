@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas</title>
+    <canvas id="mycanvas" width="200" height="100" style="border: 4px dotted red ;"></canvas> <br> <br>
+    <canvas id="mycanva" width="250" height="100" style="border: 4px solid  rgb(14, 189, 52) ;"></canvas> <br><br>
+    <canvas id="mycanv" width="200" height="100" style="border: 4px solid  rgb(171, 223, 39) ;"></canvas>
+    <script>
+        var c = document.getElementById("mycanvas");
+        var ctx = c.getContext("2d");
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+        
+        var d = document.getElementById("mycanva");
+        var ctx = d.getContext("2d");
+        ctx.font = "30px Arial"
+        ctx.fillText("Hello World",10,50);
+
+
+        var e = document.getElementById("mycanv");
+        var ctx = e.getContext("2d");
+        ctx.font = "30px Arial"
+        ctx.strokeText("Hello World",10,50);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

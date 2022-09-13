@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Document</title>
+   
+</head>
+<style>
+ 
+  h2{
+    color: red;
+  }
+  h3{
+    color: rgb(45, 8, 132);
+  }
+
+  p{
+    color: rgb(14, 77, 133);
+  }
+
+  .blinking{
+            animation: blink 2s infinite;
+            background-color: lightcyan;
+            color: brown;
+        }
+
+        @keyframes blink {
+            0%{ color: black;}
+            25%{ color: transparent;}
+            50%{ color: transparent;}
+            75%{ color: green;}
+            100%{ color: green;}
+        }
+</style>
+
+<body>
+    <h2>JavaScript DataTypes </h2>
+   
+    <h3>1. String </h3>
+    <p id = "demo"> </p>
+    <span class="blinking">
+    <script>
+      let y = 63 + "Keywords";
+      document.getElementById("demo").innerHTML=y;
+    </script>
+   </span>
+   <p id = "demo1"> </p>
+    <script>
+      let a = "Shu" + "bham";
+      document.getElementById("demo1").innerHTML=a;
+    </script>
+
+    <h3>2. Numbers</h3>
+    <p id = "demo2"> </p>
+    <script>
+      let a1 = 52.00;
+      let a2 = 45;
+      let a3 = 5.23;
+      document.getElementById("demo2").innerHTML= a1 + "<br>" + a2 + "<br>" + a3;
+    </script>
+
+    <h3>3. Dynamic </h3>
+    <p id = "demo3"> </p>
+    <script>
+      let b;
+       b = 5;
+       b = " Shubham "
+      document.getElementById("demo3").innerHTML=b;
+    </script>
+
+<h3>4. Objects </h3>
+<p id = "demo4"> </p>
+<script>
+  const person = {
+    fName : "Shubham",
+    lName : "Ghadge",
+    age : 23,
+    eyecolor : "black"
+  };
+  document.getElementById("demo4").innerHTML= person.fName+"" + " is" +" "+ person.age +" " +"years old";
+</script>
+
+<h3>5. Arrays </h3>
+<p id = "demo5"> </p>
+<script>
+  const persons = ["Ram", "Shyam", "Suresh"] ;
+  document.getElementById("demo5").innerHTML= persons;
+</script>
+
+<h3>6. Boolean</h3>
+    <p id = "demo6"> </p>
+    <script>
+      let l = 5;
+      let m = 5;
+      let n = 6;
+      document.getElementById("demo6").innerHTML= "Is l == m"+ ":" + "" +(l == m ) + "<br>" + "Is l == n"+ ":" + " " +(l == n);
+    </script>
+
+<h3>7. Undefined</h3>
+<p id="demo7"></p>
+<script>
+let Mango;
+document.getElementById("demo7").innerHTML =
+Mango + "<br>" + typeof Fruit;
+</script>  
+
+<h3>8. Null </h3>
+<p id = "demo8"> </p>
+<script>
+ let car = "";
+document.getElementById("demo8").innerHTML =
+"The value is: " +
+car + "<br>" +
+"The type is: " + typeof car;
+</script>
+
+
+
+
+
+</body>
+</html>

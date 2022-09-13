@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Types</title>
+    <script>
+        function getValue(){
+            var color = document.getElementById("mycolor").value;
+            alert (color);
+        }
+
+        function getValue(){
+            var date = document.getElementById("mydate").value;
+            alert (date);
+        }
+
+        function getValue(){
+            var datetime = document.getElementById("datetime").value;
+            alert (datetime);
+        }
+
+        function getValue(){
+            var email = document.getElementById("email").value;
+            alert (email);
+        }
+
+        function getValue(){
+            var mymonth = document.getElementById("mymonth").value;
+            alert (mymonth);
+        }
+
+        function getValue(){
+            var mynumber = document.getElementById("mynumber").value;
+            alert (mynumber);
+        }
+
+    </script>
+
+    <style>
+         aside{
+            padding-left: 30px;
+            margin-left: 15px;
+            height: 110px;
+            width: 200px;
+            float: right;
+            font-style: italic;
+            background-color: lightgray;
+
+        }
+
+        input[type="email"]:valid{
+            outline: 2px solid green;
+        }
+
+        input[type="email"]:invalid{
+            outline: 2px solid red;
+        }
+
+        input[type="number"]:valid{
+            outline: 2px solid green;
+        }
+
+        input[type="number"]:invalid{
+            outline: 2px solid red;
+        }
+        label{
+            color: rgb(171, 15, 41);
+        }
+        button{
+            color: rgb(201, 11, 173);
+            background-color: rgb(224, 213, 213);
+        }
+        input{
+            color: blue;
+        }
+        section#1 , section#2{
+            background-color: antiquewhite;
+        }
+
+    </style>
+</head>
+<body>
+
+
+  <section id="4" style="height: 80px; width: 200px; border:1px solid rgb(23, 114, 183); padding:10px;">
+    <form action="">
+        <label for="mycolor">Select your favorite Color :</label> <br> <br>
+        <input type="color" name="Color" value="#707027" id="mycolor"> 
+        <button type="button" onclick="getValue();"> Get Value </button>
+    </form>
+  </section> <br> <br>
+
+  <Aside>
+    <form action="">
+       <label for="mynumber">Enter A Number :</label> <br> <br>
+       <input type="number" name="" id="mynumber" > <br> <br>
+       <button type="button" onclick="getValue();"> Get Value </button>
+
+    </form>
+  </Aside>
+
+  <section id="1" style="height: 80px; width: 200px; border:1px solid rgb(23, 114, 183); padding:10px;">
+    <form action="">
+        <label for="mydate">Select Date :</label> <br> <br>
+        <input type="date" name="" value="2022-04-25" id="mydate">
+        <button type="button" onclick="getValue();"> Get Value </button>
+    </form>
+  </section> <br> <br>
+
+  <section id="2" style="height: 80px; width: 200px; padding:10px;">
+   <fieldset style="background-color: antiquewhite ;">
+    <legend> Date time Local</legend>
+    <form action="">
+        <label for="mydatetime">Select Date :</label> <br> <br>
+        <input type="datetime-local" name="" value="2022-04-25" id="mydate">
+        <button type="button" onclick="getValue();"> Get Value </button>
+    </form>
+</fieldset> 
+  </section> <br> <br> <br>
+
+  <Aside>
+        <form action="">
+            <label for="myemail">Enter your Mail :</label> <br> <br>
+        <input type="email" name="" value="" id="myemail" required> <br> <br>
+        <button type="button" onclick="getValue();"> Get Value </button>
+
+        </form>
+  </Aside> <br> <br>
+  <section id="3" style="height: 80px; width: 200px; border:1px solid rgb(23, 114, 183); padding:10px;">
+    <form action="">
+        <label for="mymonth">Select Month :</label> <br> <br>
+        <input type="month" name="" value="" id="mymonth">
+        <button type="button" onclick="getValue();"> Get Value </button>
+    </form>
+  </section> <br> <br>
+  
+</body>
+</html>

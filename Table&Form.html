@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Table </title>
+    <style>
+      
+        table, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            text-align: left;
+
+        }
+
+        div{
+            display: flex;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Menu">
+        <div>
+        
+            <table id="a">
+                <caption><h2> Fast Food</h2> </caption>
+                <tr>
+                    <th>Item</th>
+                    <th>Prize</th>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Burger</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>Sandwitch</td>
+                    <td>60</td>
+                </tr>
+                <tr>
+                    <td>Tea</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Coffee</td>
+                    <td>40</td>
+                </tr>
+
+            </table>
+        </div>    
+
+        
+        <div>
+            <table id="b">
+                <caption> <h2>Cold Drinks</h2></caption>
+                <tr>
+                    <th>Drinks </th>
+                    <td> Prize </td>
+                </tr>
+                <tr>
+                    <td>ThumbsUp</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Sprite</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Pepsi</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Slice</td>
+                    <td>30</td>
+                </tr>
+
+            </table>
+        </div> 
+        
+        <div class="order">
+            <form action="">
+                <table id="order1">
+                <h3>Order details</h3>
+
+             <tr>
+                <td><label for="Name">Fast Food Items :</label></td>
+            <td>
+             <input type="checkbox" name="Item" id="1">Pizza  <label for="">  &nbsp  * Qunatity:</label><input type="number" name="" id="" placeholder="Select Quantity"> <br>
+             <input type="checkbox" name="Item" id="2">Burger  <label for="">  &nbsp  * Qunatity:</label><input type="number" name="" id="" placeholder="Select Quantity"><br>
+             <input type="checkbox" name="Item" id="3">Sandwitch <label for="">  &nbsp  *  Qunatity:</label><input type="number" name="" id="" placeholder="Select Quantity"> </td>
+            </tr>
+            <tr>
+                <td>Cold Drinks</td>
+                <td>
+                    <select name="item" id="1"> 
+                        <option value="">Select From Below</option>
+                         <option value="">Pepsi </option> 
+                         <option value=""> Sprite</option>
+                         <option value=""> Slice</option>
+                    </select>
+                </td>     
+            </tr>
+
+        </table>
+
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
